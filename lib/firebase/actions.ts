@@ -1,5 +1,3 @@
-"use server"
-
 import { createResult, getUserPRs } from "./firestore"
 import type { Difficulty } from "./types"
 import { validateTimeInput, isPotentialPR } from "./validation"
