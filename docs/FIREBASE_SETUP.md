@@ -42,7 +42,7 @@ NEXT_PUBLIC_FIREBASE_APP_ID=your_app_id
   - `id` (string)
   - `userId` (string)
   - `squadId` (string)
-  - `difficulty` (string: 'easy' | 'medium' | 'hard' | 'expert')
+  - `difficulty` (string: 'easy' | 'medium' | 'hard' | 'expert' | 'master' | 'extreme')
   - `timeSeconds` (number)
   - `timestamp` (timestamp)
   - `weekStart` (timestamp, Monday 00:00)

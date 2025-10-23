@@ -14,13 +14,15 @@ const DIFFICULTY_COLORS = {
   medium: "bg-[var(--color-pr-medium)] hover:bg-[var(--color-pr-medium)]/80",
   hard: "bg-[var(--color-pr-hard)] hover:bg-[var(--color-pr-hard)]/80",
   expert: "bg-[var(--color-pr-expert)] hover:bg-[var(--color-pr-expert)]/80",
+  master: "bg-[var(--color-pr-master)] hover:bg-[var(--color-pr-master)]/80",
+  extreme: "bg-[var(--color-pr-extreme)] hover:bg-[var(--color-pr-extreme)]/80",
 }
 
 export function DifficultySelector({ value, onChange }: DifficultySelectorProps) {
   return (
     <div className="space-y-2">
       <Label>Difficulty</Label>
-      <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
         {DIFFICULTY_LEVELS.map((difficulty) => {
           const isSelected = value === difficulty
           return (

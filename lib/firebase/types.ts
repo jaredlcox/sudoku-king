@@ -1,4 +1,4 @@
-export type Difficulty = "easy" | "medium" | "hard" | "expert"
+export type Difficulty = "easy" | "medium" | "hard" | "expert" | "master" | "extreme"
 
 export type Privacy = "public" | "squad" | "private"
 
@@ -61,5 +61,7 @@ export interface UserStats {
     medium?: number
     hard?: number
     expert?: number
+    master?: number
+    extreme?: number
   }
 }

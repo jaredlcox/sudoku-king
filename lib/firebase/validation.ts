@@ -1,6 +1,6 @@
 import type { Difficulty } from "./types"
 
-export const DIFFICULTY_LEVELS: Difficulty[] = ["easy", "medium", "hard", "expert"]
+export const DIFFICULTY_LEVELS: Difficulty[] = ["easy", "medium", "hard", "expert", "master", "extreme"]
 
 export const TIME_CONSTRAINTS = {
   MIN_SECONDS: 30,

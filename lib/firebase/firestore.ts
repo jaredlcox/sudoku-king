@@ -116,6 +116,8 @@ export const getUserPRs = async (userId: string): Promise<Record<Difficulty, num
     medium: null,
     hard: null,
     expert: null,
+    master: null,
+    extreme: null,
   }
 
   snapshot.forEach((doc) => {

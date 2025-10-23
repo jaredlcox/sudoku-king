@@ -9,10 +9,12 @@ interface PRRingsProps {
 }
 
 const DIFFICULTY_CONFIG = {
-  easy: { color: "var(--color-pr-easy)", label: "Easy", radius: 80 },
-  medium: { color: "var(--color-pr-medium)", label: "Medium", radius: 100 },
-  hard: { color: "var(--color-pr-hard)", label: "Hard", radius: 120 },
-  expert: { color: "var(--color-pr-expert)", label: "Expert", radius: 140 },
+  easy: { color: "var(--color-pr-easy)", label: "Easy", radius: 60 },
+  medium: { color: "var(--color-pr-medium)", label: "Medium", radius: 80 },
+  hard: { color: "var(--color-pr-hard)", label: "Hard", radius: 100 },
+  expert: { color: "var(--color-pr-expert)", label: "Expert", radius: 120 },
+  master: { color: "var(--color-pr-master)", label: "Master", radius: 140 },
+  extreme: { color: "var(--color-pr-extreme)", label: "Extreme", radius: 160 },
 }
 
 export function PRRings({ prs }: PRRingsProps) {
@@ -77,14 +79,14 @@ export function PRRings({ prs }: PRRingsProps) {
             <div className="text-center">
               <div className="text-4xl font-bold text-foreground">PRs</div>
               <div className="text-sm text-muted-foreground">
-                {Object.values(prs).filter((pr) => pr !== null).length}/4
+                {Object.values(prs).filter((pr) => pr !== null).length}/6
               </div>
             </div>
           </div>
         </div>
 
         {/* Legend */}
-        <div className="mt-6 grid w-full grid-cols-2 gap-4">
+        <div className="mt-6 grid w-full grid-cols-2 gap-4 sm:grid-cols-3">
           {(Object.entries(DIFFICULTY_CONFIG) as [Difficulty, (typeof DIFFICULTY_CONFIG)[Difficulty]][]).map(
             ([difficulty, config]) => {
               const pr = prs[difficulty]

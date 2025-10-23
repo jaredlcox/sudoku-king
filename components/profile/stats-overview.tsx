@@ -37,7 +37,7 @@ export function StatsOverview({ totalSolves, currentStreak, longestStreak, prs }
 
           <div>
             <div className="text-3xl font-bold text-foreground">
-              {Object.values(prs).filter((pr) => pr !== null).length}/4
+              {Object.values(prs).filter((pr) => pr !== null).length}/6
             </div>
             <div className="text-sm text-muted-foreground">PRs Set</div>
           </div>
